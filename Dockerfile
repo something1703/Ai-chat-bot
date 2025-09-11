@@ -26,7 +26,7 @@ WORKDIR /app
 # --- IMPORTANT ---
 # Expose port 6996. This must match the port you configure in your Render service settings.
 # If your application.properties specifies a different server.port, update this value.
-EXPOSE 6996
+EXPOSE 7070
 
 # Copy the compiled .jar from the 'build' stage into the final image
 COPY --from=build /app/target/*.jar app.jar
